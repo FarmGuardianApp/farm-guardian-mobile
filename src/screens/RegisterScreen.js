@@ -6,7 +6,7 @@ import axios from 'axios';
 
 // --- IMPORTANT ---
 // Make sure this is your computer's actual local IP address.
-const API_BASE_URL = 'http://192.168.1.12:3000/api';
+const API_BASE_URL = 'http://192.168.1.15:3000/api';
 
 export default function RegisterScreen({ navigation }) {
   // State for form inputs
