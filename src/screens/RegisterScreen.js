@@ -6,7 +6,7 @@ import axios from 'axios';
 
 // --- IMPORTANT ---
 // Make sure this is your computer's actual local IP address.
-const API_BASE_URL = 'http://192.168.1.15:3000/api';
+const API_BASE_URL = 'http://192.168.1.12:3000/api';
 
 export default function RegisterScreen({ navigation }) {
   // State for form inputs
@@ -57,7 +57,7 @@ export default function RegisterScreen({ navigation }) {
       // On success, the backend sends a token. For now, we'll just log it
       // and navigate to the home screen. In the future, we'd save this token.
       console.log('Authentication successful! Token:', response.data.token);
-      navigation.navigate('Home');
+      navigation.navigate('App');
 
     } catch (error) {
       Alert.alert('Verification Failed', 'The OTP you entered is incorrect or has expired.');
